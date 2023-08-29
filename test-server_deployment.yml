@@ -40,8 +40,8 @@
       args:
         chdir: /tmp
 
-    - name: Move ChromeDriver to /usr/local/bin/
-      command: "sudo mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/"
+    - name: Move ChromeDriver to /usr/bin/
+      command: "sudo mv /tmp/chromedriver-linux64/chromedriver /usr/bin/"
       
     - name: Download Chrome version 116
       command: "sudo wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chrome-linux64.zip"
@@ -53,5 +53,5 @@
       args:
         chdir: /tmp
 
-    - name: Move Chrome to /usr/local/bin/
-      command: "sudo mv /tmp/chrome-linux64/chrome /usr/local/bin/"
+    - name: Move Chrome to /usr/bin/
+      command: "sudo mv /tmp/chrome-linux64/chrome /usr/bin/"
