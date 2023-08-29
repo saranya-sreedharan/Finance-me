@@ -10,7 +10,7 @@ resource "aws_instance" "production-server" {
   vpc_security_group_ids = ["sg-0fca6397d8926fb5b"]  
 
   tags = {
-    Name = "test-server"
+    Name = "production-server"
   }
 }
 
